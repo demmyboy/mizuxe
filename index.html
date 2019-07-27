@@ -350,7 +350,7 @@
               <input type="submit" value="Send us a Message" class="btn btn-primary btn-block btn-lg">
             </form>
           </div>
-          <div class="col-lg-3 align-self-center">
+          <div class="col-lg-3 col-sm-4 mx-auto align-self-center">
             <img src="img/mlogo.png" alt="" class="img-fluid">
           </div>
         </div>
@@ -378,7 +378,25 @@
     <script>
       // get the current year of the copyright
       $('#year').text(new Date().getFullYear())
+      // init the scroll spy
+      $('body').scrollspy({target:'#main-nav'})
+      
+      $('#main-nav a').on('click', function (e) {
+        // check for hash value
+        if (this.hash !== '') {
+          //prevent default behavior
+          e.preventDefault();
+          const hash = this.hash;
 
+          // animate smooth scroll
+          $('html, body').animate({
+            scrollTop: $(hash).offset().top
+          }, 900, function () {
+            // add hash to URL after scroll
+            window.location.hash = hash;
+          })
+        }
+      });
     </script>
   </body>
 
