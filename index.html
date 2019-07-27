@@ -12,8 +12,8 @@
     <link rel="stylesheet" href="css/style.css">
   </head>
 
-  <body>
-    <nav class="navbar navbar-expand-md navbar-light fixed-top py-4">
+  <body id="home" data-spy="scroll" data-target="main-nav">
+    <nav class="navbar navbar-expand-md navbar-light fixed-top py-4" id="main-nav"> 
       <div class="container">
         <a href="#home" class="navbar-brand">
           <img src="img/mlogo.png" width="50" height="50" alt="">
@@ -355,7 +355,17 @@
           </div>
         </div>
       </div>
+    </section>
+    <!--Footer section -->
+    <section  id="main-footer" class="py-5 bg-primary text-white">
+      <div class="container">
+        <div class="row text-center">
+          <div class="col-md-6 ml-auto">
+            <p class="lead"> Copyright &copy; <span id="year"></span></p>
+          </div> 
 
+        </div>
+      </div>
     </section>
     <script src="http://code.jquery.com/jquery-3.4.1.min.js"
       integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
