@@ -26,6 +26,18 @@ body {
   margin: auto;
   border-bottom: 1px #ddd solid; }
 
+#authors img {
+  margin-top: -50px; }
+#authors .card:hover {
+  background: #3292a6;
+  color: #fff; }
+  #authors .card:hover .fab {
+    color: #fff; }
+  #authors .card:hover h5 {
+    color: #fff !important; }
+#authors h5:hover {
+  color: #fff !important; }
+
 #accordion .card-header:hover {
   cursor: pointer; }
 
